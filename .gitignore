@@ -1,0 +1,50 @@
+# Ignore target, build directories (Maven & Gradle)
+target/
+build/
+out/
+
+# Ignore dependency directories
+.mvn/
+.gradle/
+!**/src/main/**/.keep   # (Keep empty directories in source)
+
+# Ignore compiled binaries
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore logs and temp files
+*.log
+logs/
+*.tmp
+hs_err_pid*
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore environment and secrets
+.env
+*.env
+#application.properties
+#application.yml
+secrets.yml
+
+# Ignore Lombok-generated files
+.lombok/
+
+# Ignore test reports
+/test-output/
